@@ -5,12 +5,19 @@ body {
 
     text-align: center;
     padding: 20px;
-    font-size: 20px; 
+    font-size: 40px; 
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
+    border: 1px solid brown;
+    background: silver;
+    border-radius: 20px;
+    padding: 0 10px 160px 10px;
+    width: auto;
+    height: 500px;
+    
 }
 
 .blk-box {
@@ -23,8 +30,9 @@ body {
        
 }
 
-h1 {
+.score-el {
     /* border: 2px solid orange; */
     font-size: 180px;
     margin: 20px 10px 30px 40px;
 }
+

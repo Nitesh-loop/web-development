@@ -1,10 +1,30 @@
 body {
     margin: 0;
-    font-family: serif;
+    /* font-family: 'LED Digital 7', sans-serif; */
+    font-family: 'Serif Dot Digital-7', sans-serif;
+
     text-align: center;
+    padding: 20px;
+    font-size: 20px; 
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
+}
+
+.blk-box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background: black;
+    color: red;
+    border-radius: 20px;
+       
+}
+
+h1 {
+    /* border: 2px solid orange; */
+    font-size: 180px;
+    margin: 20px 10px 30px 40px;
 }

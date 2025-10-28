@@ -23,17 +23,43 @@ body {
 .blk-box {
     width: 300px;
     height: 300px;
-    border: 1px solid black;
+    border: 2px solid yellow;
     background: black;
     color: red;
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: end; */
+    gap: 60px;
        
 }
 
 .score-el {
-    /* border: 2px solid orange; */
+    border: 3px solid red;
+    width: 250px;
+    height: 280px;
+    padding-top: 10px;
+}
+
+.scoreHome-el, .scoreGuest-el  {
+    /* border: 3px solid orange; */
     font-size: 180px;
-    margin: 20px 10px 30px 40px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+
+.btn-section {
+    border: 3px solid orange;
+    width: 290px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-around;
+    /* align-items: start; */
+    padding-top: 10px;
+    
 }
 
 .btn-el {
@@ -45,3 +71,4 @@ body {
     height: 60px;
     font-size: 25px;    
 }
+

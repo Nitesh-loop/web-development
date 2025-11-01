@@ -6,9 +6,38 @@ body {
     text-align: center;
     font-weight: bold;
     color: white;
+
+    font-size: 40px;
 }
 
 h1 {
     color: goldenrod;
 }
 
+#message-el {
+    font-style: italic;
+}
+
+/* .container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid red;
+    width: 30rem;
+    height: 20rem;
+} */
+
+button {
+    width: 40vh;
+    height: 10vh;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: goldenrod;
+    color: white;
+
+    font-size: large;
+    font-weight: bolder;
+}

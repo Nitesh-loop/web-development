@@ -26,3 +26,33 @@ if (age < 6) {
 } else {
     console.log("senior citizen discount")
 }
+
+
+// // challenge 3
+// let largeCountry = ["India", "China", "Pakistan", "Indonesia"]
+
+// for (let i=0; i< largeCountry.length; i++) {
+//     console.log("- "+ largeCountry[i])
+// }
+
+//challenge 4
+let largestCountry = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+
+largestCountry.shift()
+largestCountry.unshift("China")
+largestCountry.pop()
+largestCountry.push("Pakistan")
+
+for (let i=0; i< largestCountry.length; i++) {
+    console.log("- "+ largestCountry[i])
+}
+
+
+//challenge 5
+//ROCK, PAPER, SECISSOR game
+
+let hand = ["ROCK", "PAPER", "SECISSOR"]
+
+function randomHand() {
+    return Math.random
+}

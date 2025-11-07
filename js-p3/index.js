@@ -24,19 +24,19 @@ playerEl.textContent = player.name + ": $" + player.chips
 
 
 function getRandomCard() {
-  
+    let randomNum = Math.floor( Math.random() * 13) + 1
     if (randomNum === 1) {
         randomNum = 11
         return randomNum
     }
-    else if (randomNum > 10) {
+    else if (randomNum > 10){
         randomNum = 10
         return randomNum
     }
     else {
         return randomNum
     }
-
+    
 }
 
 function startGame() {
@@ -53,14 +53,14 @@ function renderGame() {
     // cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
     cardsEl.textContent = "Cards: "
 
-    for (let i = 0; i < cards.length; i++) {
+    for (let i=0; i < cards.length; i++) {
         // cardsEl.textContent = " "
         cardsEl.textContent += cards[i] + " "
     }
 
     sumEl.textContent = "Sum: " + sum
 
-    if (sum <= 20) {
+    if (sum <= 20 ) {
         message = "Do you want to draw a new card? :)"
     }
     else if (sum === 21) {
@@ -79,14 +79,14 @@ function renderGame() {
 
 function newCard() {
     // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
-    if (isAlive === true && hasBlackJack === false) {
+    if( isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
-        message = "New Card"
-        messageEl.textContent = message
-        sum += card
-        cards.push(card)
-        // console.log(cards)
-        renderGame()
+    message = "New Card"
+    messageEl.textContent = message
+    sum += card
+    cards.push(card)
+    // console.log(cards)
+    renderGame()
     }
-
+    
 }

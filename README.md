@@ -1,5 +1,5 @@
 # Arrays
-Use .push, .pop, .shift, and .unshift to Manipulate Arrays
+Use .push, .pop, .shift, and .unshift to Manipulate Arrays     (FILO)
 
 1. PUSH
 let numbers = [1,2,3,4]

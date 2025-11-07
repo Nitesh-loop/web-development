@@ -14,9 +14,12 @@ body {
 }
 
 #stage {
+    font-size: 43px;
+    font-weight: 800;
     display: flex;
     justify-content: center;
-    border: 2px solid black;
+    align-items: center;
+    /* border: 2px solid black; */
     width: 40vh;
     height: 30vh;
 }

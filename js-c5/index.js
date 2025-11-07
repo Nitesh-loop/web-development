@@ -51,8 +51,29 @@ for (let i=0; i< largestCountry.length; i++) {
 //challenge 5
 //ROCK, PAPER, SECISSOR game
 
+
 let hand = ["ROCK", "PAPER", "SECISSOR"]
 
 function randomHand() {
-    return Math.random
+    let number = Math.floor(Math.random() * 3)
+    console.log(number)
+    return hand[number]
 }
+
+let player1 = randomHand()
+let player2 = randomHand()
+
+console.log("Player 1 : " + player1 )
+console.log("      ")
+console.log("Player 2 : " + player2 )
+
+if (player1 === hand[0] && player2 === hand[1] ) {
+    console.log("palyer 2 wins!!!")
+} else if (player1 === hand[0] && player2 === hand[2]) {
+    console.log("player 1 wins!!!")
+} else if (player1 === hand[1] && player2 === hand[2]) {
+    console.log("player 2 wins!!!")
+} else {
+    console.log("draw!!!")
+}
+

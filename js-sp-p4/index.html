@@ -15,13 +15,28 @@
         <h1>Generate a <br> <span id="text-el">random password</span></h1>
         <p>Never use an insecure password again</p>
 
-        <button id="gen-pass-btn">Generate passwords</button>
+        <div class="iteractive-section">
+            <button id="gen-pass-btn">Generate passwords</button>
+
+            <div id="slider-el">
+                <input type="range" min="5" max="25" value="15" id="length-slider">
+                <span id="length-value">15</span>
+            </div>
+        </div>
+
         <hr id="sep-el">
 
         <div class="out-section">
             <div id="pass-one"></div>
             <div id="pass-two"></div>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>Check out my
+            <a href="https://github.com/Nitesh-loop?tab=repositories" target="_blank"><img id="logo"
+                    src="images/github_logo.png" alt="logo of github"></a>
+        </p>
     </div>
     <script src="index.js"></script>
 </body>

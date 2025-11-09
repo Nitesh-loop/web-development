@@ -28,12 +28,21 @@ let genPass2
 let passOneEl = document.getElementById("pass-one")
 let passTwoEl = document.getElementById("pass-two")
 
+let sliderEl = document.getElementById("length-slider")
+let sliderValue = document.getElementById("length-value")
+
+//generates the random index value from 1 to characters.length
 function randomChar() {
     let outPut = Math.floor(Math.random() * characters.length)
     // console.log(outPut)
     return outPut
 }
 
+sliderEl.addEventListener("input", function() {
+    let currentValue = sliderEl.value
+    sliderValue.textContent = currentValue
+    passwordLength = currentValue
+})
 
 function randomGen() {
     genPass1 = " "
